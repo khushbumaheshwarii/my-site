@@ -4,10 +4,14 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: #26a69a;
     color: #fff;
+    
 }
 
 
@@ -24,13 +28,13 @@ body {
 
 .logo {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
 .logo span {
     color: #00695c;
-    font-weight: 500;
+    font-weight: 900;
 
 }
 
@@ -235,31 +239,33 @@ nav ul li a:hover::after {
 }
 
 .work img {
-    width: 80px;
+    margin-top: 10px;
+    margin-left: 13px;
+    width: 200px;
+    height: 130px;
     border-radius: 10px;
+    justify-content: center;
     display: inline-block;
 }
 .link {
     display: inline;
-    /* justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: -20%; */
+   
 }
 
 .work-list div h2 {
-    text-align: left;
-    /* flex-basis: 35%;
+    text-align: center;
+    margin-top: 30px;
     font-size: 25px;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 15px; */
+    flex-basis: 35%;
+    
+
 }
 
 .work-list div a {
     text-decoration: none;
     color: #fff;
     margin-top: 2px;
-
     font-size: 25px;
     display: inline;
 }
@@ -267,6 +273,11 @@ nav ul li a:hover::after {
 .work-list div:hover {
     background-color: #004d40;
     transform: translateY(-10px);
+}
+.description{
+    text-align: center;
+    margin-top:20px;
+    font-size: 15px;
 }
 
 .btn {
@@ -279,18 +290,21 @@ nav ul li a:hover::after {
     text-decoration: none;
     columns: #fff;
     background-color: #b2dfdb;
-    color:black;
+    color:white;
 }
 
-/* #seemore{
-    display: none;
-} */
+
 
 
 .btn:hover {
     background: #004d40;
 }
 
+#icon {
+    position: absolute;
+    bottom: 355px;
+    right: 30px;
+}
 
 
 
@@ -368,6 +382,10 @@ form .btn2 {
     margin-top: 20px;
     cursor: pointer;
 }
+form .btn a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -377,12 +395,87 @@ form .btn2 {
 .copy-right {
     width: 100%;
     text-align: center;
-    padding: 25px, 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
     background-color: #00695c;
     font-weight: 300;
     margin-top: 20px;
+
 }
 
 .copy-right i {
     color: aqua;
+}
+
+/* ---------------------------------------------------------------css for small screen----------------------------------------------------- */
+ nav .fas {
+    display: none;
+ }
+@media only screen and (max-width: 600px){
+    #header{
+        
+        
+    }
+    .logo{
+        margin-left:-30px;
+
+    }
+    .header-text{
+        margin-top: 40%;
+        font-size: 16px;
+    }
+    .image{
+        flex-basis: 100%;
+        margin-left:-160px;
+        margin-top: 110px;
+     }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+     }
+     nav ul{
+        background:#00695c;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+     }
+     nav ul li{
+        display: block;
+        margin: 25px;
+     }
+     nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     }
+     .sub-title{
+        font-size: 40px;
+     }
+     .about-col-1, .about-col-2{
+        flex-basis: 100%;
+     }
+     .about-col-1{
+        margin-bottom: 30px;
+     }
+     .about-col-2{
+        font-size: 14px;
+     }
+     .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+     }
+     .contact-left, .contact-right{
+        flex-basis: 100%;
+     }
+
+
 }

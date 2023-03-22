@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b44dd28726.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap');
+      </style>
     <title>Khushbu | Front-End Developer</title>
 </head>
 
@@ -15,13 +18,14 @@
         <div class="container">
             <nav>
                 <div class="logo"><span>K</span>hushbu</div>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <div class="text">
@@ -84,56 +88,50 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="image/rolling dice.jpg" alt="">
-                    <a href="https://khushbumaheshwarii.github.io/Rolling-Dice/"><i
-                        class="fa-solid fa-globe"></i></a> 
+                    <img src="image/rolling dice.png" alt="">
+                    <a href="https://khushbumaheshwarii.github.io/Rolling-Dice/">
+                        <i id="icon" class="fa-sharp fa-solid fa-link" style="color: #fff;"></i>
+                    </a>
                 
                     <div class="link">
                         <h2>Rolling Dice <span> </span></h2>
                     </div>   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita ratione assumenda porro
-                        quasi fugiat deleniti nisi tempore! Quaerat praesentium repellendus impedit numquam alias, odit
-                        cupiditate accusantium dolorum veritatis nulla, libero excepturi culpa atque!</p>
+                    <p class="description">This is a Dice Game for two person in which , the person who will Score the Highest will Win the Game</p>
                 </div>
                 <div class="work">
-                    <img src="image/drum.png.crdownload" alt="">
-                    <a href="drum-kit-lac-zeta.vercel.app"><i class="fa-solid fa-globe"></i></a>
-
+                    <img src="image/drum kit.png" alt="">
+                    <a href="drum-kit-lac-zeta.vercel.app">
+                        <i id="icon" class="fa-sharp fa-solid fa-link" style="color: #fff;"></i>
+                    </a>
                     <div class="link">
                         <h2>Drum Kit</h2>
                        
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam animi aliquam voluptas vitae,
-                        error dolore neque alias accusamus reiciendis fuga, quisquam sequi similique beatae dicta
-                        possimus voluptate maiores culpa sint?</p>
+                    <p class="description">A Drum kit to play and enjoy the drums</p>
                 </div>
                 <div class="work">
-                    <img src="image/guess number.avif" alt="">
-                    <a href="https://khushbumaheshwarii.github.io/Guess-Number/"><i
-                        class="fa-solid fa-globe"></i></a>
+                    <img src="image/guess number.png" alt="">
+                    <a href="https://khushbumaheshwarii.github.io/Guess-Number/">
+                        <i id="icon" class="fa-sharp fa-solid fa-link" style="color: #fff;"></i>
+                    </a>
                     <div class="link">
                         <h2>Guess the Number</h2>
                         
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, cupiditate officiis? Quia vero
-                        deserunt nisi veniam rerum quos mollitia omnis voluptatem harum molestiae ea voluptates magnam
-                        libero, et ab facilis ducimus officia totam consequuntur? </p>
+                    <p class="description">Guess the Hidden Number between 1 to 20</p>
                     
                 </div>
-                <div class="work hid-work" id="seemore">
+                <div class="work">
                     
-                    <img src="image/guess number.avif" alt="">
-                    <a href="https://khushbumaheshwarii.github.io/Guess-Number/"><i
-                        class="fa-solid fa-globe"></i></a>
+                    <img src="image/tindog.png" alt="">
+                    <a href="https://khushbumaheshwarii.github.io/TinDog/">
+                        <i id="icon" class="fa-sharp fa-solid fa-link" style="color: #fff;"></i>
+                    </a>
                     <div class="link">
-                        <h2>Guess the Number</h2>
+                        <h2>Tin Dog</h2>
                         
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, cupiditate officiis? Quia vero
-                    deserunt nisi veniam rerum quos mollitia omnis voluptatem harum molestiae ea voluptates magnam
-                    libero, et ab facilis ducimus officia totam consequuntur?
-                    </p>
+                    <p class="description">A Dating Website Design for Dogs &#128525</p>
                     
                 </div>
             </div>
@@ -163,35 +161,19 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2" >Submit</button>
+                        <!-- <button type="submit" class="btn btn2" >Submit</button> -->
+                        <button type="submit" class="btn btn2"><a href="mailto:khushbumaheshwari007@gmail.com">Send Message</a></button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="copy-right">
-            <p> Made with <i class="fa-solid fa-heart"></i> by Khushbu.</p>
+            <p> Made with <i class="fa-solid fa-heart"></i> by Khushbu</p>
         </div>
     </div>
 
+<script src="index.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <script src="index.js"></script>
     
 </body>
-
 </html>
