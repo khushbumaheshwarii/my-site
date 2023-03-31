@@ -416,10 +416,6 @@ form .btn a{
     display: none;
  }
 @media only screen and (max-width: 600px){
-    #header{
-        
-        
-    }
     .logo{
         margin-left:-30px;
 
