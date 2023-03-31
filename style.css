@@ -182,6 +182,10 @@ nav ul li a:hover::after {
     list-style: none;
     margin: 10px 0;
 }
+.tab-contents a{
+    text-decoration: none;
+    color: #e0f2f1;
+}
 
 .tab-contents ul li span {
     color: #00695c;
